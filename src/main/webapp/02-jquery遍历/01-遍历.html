@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+    <script >
+        /*$(function () {
+            $("#city li").each(function (index) {
+                if($(this).html()=="上海"){
+                    return true;
+                }
+                alert($(this).text());
+            });
+        });*/
+        $(function () {
+           for(li of  $("#city li")){
+               alert($(li).text());
+           }
+        });
+
+    </script>
+</head>
+<body>
+<ul id="city">
+    <li>北京</li>
+    <li>上海</li>
+    <li>天津</li>
+    <li>重庆</li>
+</ul>
+</body>
+</html>
